@@ -31,7 +31,7 @@ export const BolasServicios = () => {
 
         const imagesTimer = setTimeout(() => {
             setIsLoaded(true);
-        }, 2000);
+        }, 1800);
 
         return () => {
             clearTimeout(textTimer);
