@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import logoProspera from '../../assets/images/logo-prospera.webp';
 import logoProyecta from '../../assets/images/logo-proyecta.webp';
+import imgText0 from '../../assets/images/servicio-0.webp';
 import ImgText1 from '../../assets/images/servicio-1.webp';
 import ImgText2 from '../../assets/images/servicio-2.webp';
 import ImgText3 from '../../assets/images/servicio-3.webp';
@@ -12,9 +13,9 @@ import Spiner from '../../assets/images/spiner-1.webp';
 const images = [
     { id: 1, src: ImgText1, text: 'Texto 1' },
     { id: 2, src: ImgText2, text: 'Texto 2' },
-    { id: 3, src: ImgText3, text: 'Texto 3' },
+    { id: 3, src: ImgText5, text: 'Texto 3' },
     { id: 4, src: ImgText4, text: 'Texto 4' },
-    { id: 5, src: ImgText5, text: 'Texto 5' },
+    { id: 5, src: ImgText3, text: 'Texto 5' },
 ];
 
 export const BolasServicios = () => {
@@ -84,7 +85,7 @@ export const BolasServicios = () => {
                                 }}
                             >
                                 <img
-                                    src={item.src}
+                                    src={disabledImages.includes(item.id) ? imgText0 : item.src}
                                     alt=""
                                     className={`circle-item item-${index + 1} ${isLoaded ? 'show' : ''}  ${
                                         selectedImageId === item.id ? 'selected' : ''
