@@ -4,17 +4,17 @@ export const Section2Lp = () => {
             <div className="section-2-lp-1">
                 <div className="bold-text section-2-lp-1-1">
                     <div>
-                        <p>7</p>
+                        <p>+7</p>
                         <p>Años de Experiencia</p>
                     </div>
 
                     <div>
-                        <p>12,000</p>
+                        <p>+15,000</p>
                         <p>Trámites Realizados</p>
                     </div>
 
                     <div>
-                        <p>12,000</p>
+                        <p>+12,000</p>
                         <p>Familias Asesoradas</p>
                     </div>
                 </div>
